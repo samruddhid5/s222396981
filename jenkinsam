@@ -55,20 +55,20 @@ pipeline {
     post {
         success {
             emailext(
-                to: "samruddhidhavale990@gmail.com"
+                to: "samruddhidhavale990@gmail.com",
                 subject: "Pipeline Success",
                 body: "The pipeline has executed successfully.",
-                attachLog: true,
+                attachLog: true
             )
             
         }
         failure {
             // Send email notification for failed pipeline execution
             emailext(
-                to: "samruddhidhavale990@gmail.com"
+                to: "samruddhidhavale990@gmail.com",
                 subject: "Pipeline failed",
                 body: "The pipeline has executed unsuccessfully.",
-                attachLog: true,
+                attachLog: true
             )
                 
         }

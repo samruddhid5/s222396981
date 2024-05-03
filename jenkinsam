@@ -58,7 +58,7 @@ pipeline {
                 to: "samruddhidhavale990@gmail.com",
                 subject: "Pipeline Success",
                 body: "The pipeline has executed successfully.",
-                attachmentsPattern: "**/console.log"
+                attachLog: true,
             )
             
         }
@@ -68,7 +68,7 @@ pipeline {
                 to: "samruddhidhavale990@gmail.com",
                 subject: "Pipeline failed",
                 body: "The pipeline has executed unsuccessfully.",
-                attachmentsPattern: "**/console.log"
+                attachLog: true,
             )
                 
         }
